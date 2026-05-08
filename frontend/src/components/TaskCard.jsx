@@ -17,8 +17,8 @@ try {
   toast.success("Nhiệm vụ đã xóa.");
   handleTaskChanged();  
 } catch (error) {
-  console.error("Lỗi xảy ra kho xóa task.", error);
-  toast.error("Lỗi xảy ra kho xóa task.", error);
+  console.error("Lỗi xảy ra khi xóa task.", error);
+  toast.error("Lỗi xảy ra khi xóa task.", error);
   
 }
   };
