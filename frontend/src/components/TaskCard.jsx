@@ -14,11 +14,11 @@ const TaskCard = ({task, index, handleTaskChanged}) => {
   const deleteTask = async (taskId) => {
 try {
   await api.delete(`/tasks/${taskId}`);
-  toast.success("Nhiem vu da xoa.");
+  toast.success("Nhiệm vụ đã xóa.");
   handleTaskChanged();  
 } catch (error) {
-  console.error("Loi xay ra khi xoa task", error);
-  toast.error("Loi xay ra khi xoa Task", error);
+  console.error("Lỗi xảy ra kho xóa task.", error);
+  toast.error("Lỗi xảy ra kho xóa task.", error);
   
 }
   };
